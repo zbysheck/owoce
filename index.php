@@ -25,6 +25,9 @@ if(!@include 'config.php'){
 
     spl_autoload_register('__autoload');
 
+    $view=new view();
+    $view->render('form');
+
 
 }
 

@@ -1,4 +1,4 @@
-
+<div id="content">
 <div class="ui form">
     <div class="field">
 <form action="" method="post">
@@ -14,4 +14,4 @@
     <input type="submit" id="submit" name="action" value="addProduct">
 
 </form>
-        </div></div>
+        </div></div></div>

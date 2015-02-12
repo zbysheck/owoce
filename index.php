@@ -25,10 +25,17 @@ if(!@include 'config.php'){
 
     spl_autoload_register('__autoload');
 
+
+
     $view=new view();
     $view->render('head');
-    $view->render('form');
+    //$view->render('form');
 
-
+    try{
+    $c=new category($db, $view);
+} catch(Exception $e){
+    echo $e->getMessage();
+}
+    $view->render('foot');
 }
 

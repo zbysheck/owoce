@@ -13,12 +13,7 @@
                             <i class="help icon" data-title="What are Modules?" data-content="Modules are UI elements that include behaviors as part of their definition. Modules require some knowledge of Javascript to use."></i>
                           </a> -->
                 </div>
-                <div class="four item tabular ui menu">
-                    <a class="active item" data-tab="definition">All</a>
-                    <a class="item" data-tab="examples">Fruits</a>
-                    <a class="item" data-tab="usage">Veggies</a>
-                    <a class="item" data-tab="settings">My List</a>
-                </div>
+                {include file="views/tab-menu.tpl"}
             </div>
         </div>
         {include file="views/content.tpl"}
@@ -29,7 +24,7 @@
 <div class="ui tab" data-tab="Definition">
     <img src="">
     {$posts[0]['name']}
-    {foreach from=$posts item=i}
+    {foreach from=$categories item=i}
         {include file="views/single.tpl"}
     {/foreach}
 
